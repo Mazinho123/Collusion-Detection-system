@@ -15,7 +15,7 @@ This is a comprehensive machine learning system for detecting bidder collusion a
 
 ### Core Algorithms
 
-#### 1. Anomaly Detection (Step 3)
+#### 1. Anomaly Detection 
 - **Isolation Forest**: Detects global outliers
   - 100 decision trees
   - Contamination parameter: 10% (configurable)
@@ -31,7 +31,7 @@ This is a comprehensive machine learning system for detecting bidder collusion a
   - Normalizes scores to [0, 1]
   - Reduces false positives
 
-#### 2. Network Analysis (Step 4)
+#### 2. Network Analysis 
 - **Co-bidding Network**: Graph where edges = co-participation in auctions
 - **Community Detection**: Louvain algorithm to identify bidding cartels
 - **Centrality Measures**:
@@ -39,7 +39,7 @@ This is a comprehensive machine learning system for detecting bidder collusion a
   - Betweenness centrality (network bridges)
   - Closeness centrality (overall connectivity)
 
-#### 3. Feature Engineering (Step 2)
+#### 3. Feature Engineering
 Extracts 20+ features per bidder:
 
 **Participation Features**:
@@ -63,7 +63,7 @@ Extracts 20+ features per bidder:
 - Number of co-bidders
 - Co-bidder concentration
 
-#### 4. Risk Scoring (Step 5)
+#### 4. Risk Scoring 
 Combines signals with configurable weights:
 ```
 Combined Risk = 0.5 × Anomaly Score
@@ -369,3 +369,4 @@ Based on research in auction economics, antitrust enforcement, and machine learn
 ---
 
 **Ready to start?** → Run `python test_demo.py`
+
